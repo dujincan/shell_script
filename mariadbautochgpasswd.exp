@@ -1,0 +1,22 @@
+#!/usr/bin/expect
+
+#set timeout 60
+
+spawn mysql_secure_installation
+expect "*"
+send "\r"
+expect "*"
+send "\r"
+expect "*"
+send "123456\r"
+expect "*"
+send "123456\r"
+expect "*"
+send "\r"
+expect "*"
+send "\r"
+expect "*"
+send "\r"
+expect "*"
+send "\r"
+expect eof 
